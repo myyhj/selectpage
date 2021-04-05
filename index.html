@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/element.css" />
+<style>
+    html,
+    body,
+    #app {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <div style="padding-left: 20px">
+            <big-data-select :bigdata="data2" @getbigdataselectval="getbigdataselectval"></big-data-select>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/vue.min.js"></script>
+<script src="./js/element.js"></script>
+<script src="./js/selectpage.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        props: {},
+        data: function() {
+            return {
+                data2: [{
+                    value: "1",
+                    label: "黄金糕",
+                }, {
+                    value: "2",
+                    label: "双皮奶",
+                }, {
+                    value: "3",
+                    label: "蚵仔煎",
+                }, {
+                    value: "4",
+                    label: "龙须面",
+                }, {
+                    value: "5",
+                    label: "北京烤鸭",
+                }, {
+                    value: "6",
+                    label: "蚵仔煎",
+                }, {
+                    value: "7",
+                    label: "龙须面",
+                }, {
+                    value: "8",
+                    label: "双皮奶",
+                }, {
+                    value: "9",
+                    label: "蚵仔煎",
+                }, {
+                    value: "10",
+                    label: "龙须面",
+                }, {
+                    value: "11",
+                    label: "北京烤鸭",
+                }, {
+                    value: "12",
+                    label: "蚵仔煎",
+                }, {
+                    value: "13",
+                    label: "龙须面",
+                }, {
+                    value: "14",
+                    label: "双皮奶",
+                }, {
+                    value: "15",
+                    label: "蚵仔煎",
+                }, {
+                    value: "16",
+                    label: "龙须面",
+                }, {
+                    value: "17",
+                    label: "北京烤鸭",
+                }, {
+                    value: "18",
+                    label: "蚵仔煎",
+                }, {
+                    value: "19",
+                    label: "龙须面",
+                }, {
+                    value: "20",
+                    label: "北京烤鸭",
+                }, ],
+            };
+        },
+        created: function() {},
+        mounted: function() {},
+        computed: {},
+        watch: {},
+        methods: {
+
+            getbigdataselectval(val) {
+                console.log(val);
+            },
+        },
+    });
+</script>
